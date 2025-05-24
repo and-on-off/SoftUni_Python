@@ -20,7 +20,4 @@ for line in range(lines):
         else:
             opened_brackets = False
 
-if balanced:
-    print("BALANCED")
-else:
-    print("UNBALANCED")
+print("BALANCED" if balanced else "UNBALANCED")
