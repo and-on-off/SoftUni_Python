@@ -37,3 +37,19 @@ a, b = b, a
 print(f"After:")
 print(f"a = {a}")
 print(f"b = {b}")
+
+# Variant 4
+a = int(input())
+b = int(input())
+
+print(f"Before:")
+print(f"a = {a}")
+print(f"b = {b}")
+
+a = a ^ b
+b = a ^ b
+a = a ^ b
+
+print(f"After:")
+print(f"a = {a}")
+print(f"b = {b}")
