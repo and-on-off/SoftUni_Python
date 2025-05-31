@@ -10,7 +10,7 @@ for shuffle in range(shuffles):
         half1 = deck[:len(deck) // 2]
         half2 = deck[len(deck) // 2:]
         faro_shuffle += half2[card], half1[card]
-    deck = faro_shuffle
-    faro_shuffle = []
+    deck = faro_shuffle[:]
+    faro_shuffle.clear()
 
 print(first_card + deck + last_card)
